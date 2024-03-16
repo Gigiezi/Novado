@@ -14,7 +14,7 @@ body{
     background-color: #1A1A1A;
 }
 .displayNone{
-    display: none;
+    display: none !important;
 }
 /* /////////////// */
 header{
@@ -134,3 +134,10 @@ main{
 .mainContentItem img{
     cursor: pointer;
 }
+.doneItem{
+    order: 1;
+} 
+.doneItem p{
+    color: #808080;
+    text-decoration: line-through;
+}  
