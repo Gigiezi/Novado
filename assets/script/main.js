@@ -3,9 +3,11 @@ const mainInput = document.getElementById('mainInput');
 const nonListed = document.getElementById('noneListed')
 const mainContent = document.getElementById('mainContentContainer');
 
-addButton.addEventListener('click', addItemFunction)
+addButton.addEventListener('click', addItemFunction);
 
 function addItemFunction() {
     nonListed.className = 'displayNone';
-    mainContent.innerHTML += '<div class="mainContentItem"><div class="itemContent"><img src="icons/check.svg" alt="check icon"><p>davaleba 1</p></div><div id="trashIconBox"><img src="icons/trash.svg" alt="trash Icon"></div></div>';
+    mainContent.innerHTML += '<div class="mainContentItem"><div class="itemContent"><img src="icons/check.svg" alt="check icon"><p>'+ mainInput.value +'</p></div><div><img onClick="this.parentElement.parentElement.remove()" src="icons/trash.svg" alt="trash Icon"></div></div>';
+    mainInput.value = '';
 }
+
