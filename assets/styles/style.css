@@ -135,6 +135,9 @@ main{
     cursor: pointer;
 }
 .doneItem{
+    background-image: url(../icons/checked.svg);
+    background-repeat: no-repeat;
+    background-position: left 16px top 16px ;
     order: 1;
 } 
 .doneItem p{
